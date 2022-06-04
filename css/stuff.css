@@ -1,0 +1,988 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*.odd, .even {
+	height:500px;
+	width:100%;
+}*/
+
+@font-face {
+	font-family: js;
+	src: url('../fonts/joystix.ttf');
+	
+}
+.imgtitle {
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+	max-width:90%;
+}
+.mobilenoimage {
+	display:none;
+}
+.cat, .cattwo, #twitchrow  {
+	background-image:url("../img/mobilebg.gif");
+	background-size:cover;
+}
+.parallax__group, .parallax__layer {
+	/*height:100vh; see if i can make it to nonsafari*/
+	min-height:568px;
+}
+#mediarow .title {
+	position:absolute;
+	top:50%;
+	margin-top:-60px;
+		display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+}
+#descrow {
+	background-color:#000;
+}
+.cemetary {
+		background:url("../img/ixbigskulls.png");
+	background-position:center bottom 30px;
+	background-repeat:no-repeat;
+	text-align:center;
+}
+#twitchrow .desccontent {
+	background-color:rgba(23,0,0,0.7);
+	text-align:center;	
+}
+.ixdesc {
+	background-image:url("../img/ixrocksbg.png");
+	background-repeat:repeat-x;
+	background-position:left 0px top 0px;
+	background-size:initial;
+}
+#descrow .title {
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+	max-width:100%;
+	margin-top:30%;
+}
+.desctitle {
+	width:100%;
+	text-align:center;
+	font-family:"js";
+	color:#ffc;
+	text-shadow: 2px 2px 0px rgba(153, 0, 0, 1);
+	margin-bottom:5%;
+	font-size:16pt;
+}
+#descrow iframe, .item img {
+	max-width:100%;
+}
+.carousel-indicators li {
+	border-radius:0px;
+	border:0px;
+	background-color:#fff;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(153, 0, 0, 1);
+-moz-box-shadow: 2px 2px 0px 0px rgba(153, 0, 0, 1);
+box-shadow: 2px 2px 0px 0px rgba(153, 0, 0, 1);
+}
+.carousel-indicators .active {
+	background-color:#fbfe7b;
+}
+.item {
+	display:inline-block;
+	vertical-align:middle;
+	min-height:260px;
+	background-color:black;
+}
+.item img {
+	/*margin-top:20px;*/
+}
+.item iframe {
+	margin-top:20%;
+	
+}
+.skulll {
+  
+  background-image:url("../img/skullleftreg.png");
+	background-color:transparent;
+}
+.skullr {
+  
+  background-image:url("../img/skullrightreg.png");
+	background-color:transparent;
+}
+#twitchrow .desccontent {
+	padding-top:20%;
+	min-height:565px;
+}
+.descimg img  {
+	max-height:150px;
+}
+.desctxt p {
+	margin-bottom:10px;
+}
+.desctxt {
+	text-align:justify;
+	display:inline-block;
+	color:#ffc;
+	font-size:10pt;
+	width:90%;
+	vertical-align:top;
+}
+#corprow {
+	background-color:black;
+}
+
+.tvtitle {
+	max-width:90%;
+	text-align:center;
+	color:#ffc;
+	margin:auto;
+	margin-bottom:40px;
+}
+.tvtitle img {
+	margin-top:10%;
+	display:inline-block;
+	vertical-align:middle;
+	max-width:35%;
+}
+.on {
+	display:inline-block;
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:10%;
+	vertical-align:middle;
+	font-size:30px;
+}
+.tvtxt p {
+	margin-bottom:20px;
+}
+.sub {
+	text-align:center;
+	display:inline-block;
+	color:#ffc;
+	font-size:11pt;
+	width:90%;
+	vertical-align:top;
+	
+}
+.sub p {
+	line-height:30px;
+}
+.tvtxt {
+	text-align:center;
+	display:inline-block;
+	color:#ffc;
+	font-size:10pt;
+	width:100%;
+	vertical-align:top;
+}
+.txtgroup {
+	display:inline-block;
+	vertical-align:middle;
+	width:100%
+}
+#group6 {
+	overflow:hidden;
+	background-color:#fff;
+	background-image:url("../img/bzkbg.png");
+}
+#group6 .even{
+	display:none;
+}
+.bzkimg img {
+	max-width:90%;
+	max-height:200px;
+	margin-bottom:5%;
+}
+
+.bzktxt p {
+	margin-bottom:10px;
+}
+.bzktitle {
+	color:#101010;
+text-align:center;
+	margin-top:10%;
+	font-size:16pt;
+	margin-bottom:5%;
+}
+.bzktxt {
+	text-align:justify;
+	display:inline-block;
+	color:#101010;
+	font-size:10pt;
+	width:90%;
+}
+#group6 .bzkdesc {
+	display:inline-block;
+	text-align:center;
+	background-color:rgba(255,255,255,0.7);
+}
+#group7 {
+	z-index:4;
+}
+.corplink, .corpolink, #listwrapper li {
+	display:inline-block;
+	text-align:center;
+}
+.oddb .row {
+	margin:0px;
+		text-align:center;
+}
+#listwrapper {
+	max-width:90%;
+	display:inline-block;
+	text-align:center;
+}
+.footertitle {
+	font-size:26pt;
+	color:#fff;
+	padding-top:5%;
+}
+.corplink {
+	height:55px;
+	width:55px;
+}
+#consolelinks {
+	padding-top:5%;
+}
+#corplinks {
+		background-color:#171717;
+	margin-bottom:2%;
+
+}
+#corpsteam {
+	background-image:url("../img/ixsteam.png");
+	background-size:cover;
+}
+#corpwiiu {
+	background-image:url("../img/ixwiiu.png");
+	background-size:cover;
+}
+#corpps4 {
+	background-image:url("../img/ixps4.png");
+	background-size:cover;
+}
+#corpxbox {
+	background-image:url("../img/ixxbox.png");
+	background-size:cover;
+}
+#corpbzk {
+	background-image:url("../img/ix_bzk_o.png");
+	background-color:transparent;
+}
+#corpfb {
+	background-image:url("../img/ix_fb_o.png");
+	background-color:transparent;
+}
+#corptw {
+	background-image:url("../img/ix_tw_o.png");
+	background-color:transparent;
+}
+#corpat {
+	background-image:url("../img/ix_at_o.png");
+	background-color:transparent;
+}
+#corpgl {
+	background-image:url("../img/ix_gl_o.png");
+	background-color:transparent;
+}
+#corptv {
+	background-image:url("../img/twitch_o.png");
+	background-color:transparent;
+}
+#corppk {
+	background-image:url("../img/ix_pk_o.png");
+	background-color:transparent;
+}
+#corpb{
+	background-image:url("../img/ix_forums_o.png");
+	background-color:transparent;
+}
+.corpolink {
+	background-repeat:no-repeat;
+}
+#corptext {
+	font-size:10pt;
+	color:#717171;
+	text-align:center;
+	margin:0px;
+	height:10px;
+	width:100%;
+	background-color:#101010;
+}
+#group7, #group7 .parallax__layer {
+	min-height:initial;
+	height:auto;
+}
+@media (min-width: 992px) { 
+/*FIXING MOBILE STUFF*/
+.parallax__group, .parallax__layer, #twitchrow .desccontent {
+	height:initial;
+	min-height:initial;
+}
+	.tvtitle, .tvtitle img {
+		max-width:none;
+		margin:auto;
+	}
+	.on {
+		font-size:initial;
+		margin:auto;
+	}
+	.mobilenoimage, #group6 .even {
+	display:initial;
+}
+	.cat, .cattwo, #twitchrow {
+		background-size:initial;
+	}
+	#descrow .title, .item img, .bzktitle {
+		margin:auto;
+	}
+	.desctitle, .bzktitle, .footertitle {
+		font-size:inherit;
+	}
+	#twitchrow .desccontent, .footertitle, #consolelinks {
+		padding:initial;
+		height:initial;
+		background-color:transparent;
+	}
+	.descimg img, .bzkimg img, #twitchrow .desccontent {
+		max-height:none;
+	}
+	#group6, #group6 .bzkdesc {
+		background-image:none;
+		background-color:transparent;
+	}
+	#group6 {
+		overflow:visible;
+	}
+	/*END OF FIX*/
+.odd {
+	background-color:black;
+	-webkit-box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.51);
+	-moz-box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.51);
+	box-shadow: 0px 0px 32px 10px rgba(0,0,0,0.51);
+}
+.oddb {
+	background-color:black;
+-webkit-box-shadow: -1px -17px 30px 0px rgba(0,0,0,0.51);
+-moz-box-shadow: 0px -17px 30px 0px rgba(0,0,0,0.51);
+box-shadow: 0px -17px 30px 0px rgba(0,0,0,0.51);
+}
+.even{
+	background-color:#fff;
+}
+.imgtitle {
+	max-width:100%;
+}
+.bggif {
+	width:100%;
+}
+	
+/*PARALLAX STUFF KEEP AT THE END*/
+  /* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-perspective-origin-x: 100%;
+    perspective-origin-x: 100%;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+	  width:100%;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    -webkit-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+  }
+
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+#mediarow .parallax__layer--back {
+	    -webkit-transform: translateZ(-200px) scale(2);
+    transform: translateZ(-200px) scale(2);
+}
+	#mediarow {
+		height:80vh;
+	}
+
+  /* demo styles
+  --------------------------------------------- */
+
+  body, html {
+    overflow: hidden;
+  }
+
+  body {
+    font: 100% / 1.5 Arial;
+  }
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  /* style the groups
+  --------------------------------------------- */
+
+  #titlerow {
+    z-index: 5; /* slide over group 2 */
+  }
+  #titlerow .parallax__layer--base {
+
+    /*background: rgb(102,204,102);*/
+  }
+
+  #mediarow {
+    z-index: 3; /* slide under groups 1 and 3 */
+  }
+  #mediarow .parallax__layer--back {
+/*    background: rgb(123,210,102);*/
+  }
+
+  #descrow {
+    z-index: 4; /* slide over group 2 and 4 */
+  }
+  #descrow .parallax__layer--base {
+	  /*
+    background: rgb(153,216,101);
+*/  }
+
+  #twitchrow {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+  #twitchrow .parallax__layer--deep {
+  /*  background: rgb(184,223,101);
+ */ }
+
+  #corprow {
+    z-index: 3; /* slide over group 4 and 6 */
+  }
+  #corprow .parallax__layer--base {
+   /* background: rgb(214,229,100);
+ */ }
+
+  #group6 {
+    z-index: 2; /* slide under group 5 and 7 */
+  }
+  #group6 .parallax__layer--back {
+   /* background: rgb(245,235,100);
+ */ }
+
+  #group7 {
+	  height:350px;
+    z-index: 3; /* slide over group 7 */
+  }
+  #group7 .parallax__layer--base {
+   /* background: rgb(255,241,100);
+ */ }
+.cat {
+	background-image:url("../img/ixsubbgnocloud.gif");
+		background-repeat:no-repeat;
+	background-position:bottom left;
+	background-color:rgb(60, 0, 55);
+}
+.cattwo {
+	background-image:url("../img/ixfore.gif");
+		background-repeat:no-repeat;
+	background-position:bottom left;
+}
+#youtubevideo{
+	margin-top:58px;
+	width:620px;
+	height:348px;
+}
+.bzk {
+	background-image:url("../img/bzkbg.png");
+	background-repeat:no-repeat;
+
+}
+#bzk {
+height:100%;
+	width:100%;
+	background-image:url("../img/bzkbg.png");
+	background-repeat:no-repeat;
+	opacity:0.3;
+	position:fixed;
+	top:0px;
+	overflow:hidden;
+	
+}
+.item {
+	width:620px;
+	height:465px;
+	background-color:#000;
+}
+.ixdesc {
+	background-color:rgba(23,0,0,0.7);
+	text-align:center;
+}
+.bzkdesc {
+		text-align:center;
+}
+#consolelinks {
+	height:130px;
+	width:100%;
+	margin:0px;
+	text-align:center;
+}
+.footertitle {
+	color:#ffc;
+}
+.footer {
+	height:160px;
+	width:100%;
+	margin:0px;
+	z-index:3;
+	position:fixed;
+	bottom:0px;
+}
+#group7 li {
+	display:inline-block;
+	list-style-type: none;
+}
+#group7 {
+	text-align:center;}
+#corplinks {
+	height:130px;
+	width:100%;
+	margin:0px;
+	background-color:#171717;
+	text-align:center;
+}
+#corptext {
+	font-size:10pt;
+	color:#717171;
+	text-align:center;
+	margin:0px;
+	height:30px;
+	width:100%;
+	background-color:#101010;
+}
+#corptext p {
+	display:inline-block;
+	vertical-align:middle;
+}
+#listwrapper {
+	display:inline-block;
+	margin:auto;
+}
+.corplink{
+	height:100px;
+	width:100px;
+	margin-top:15px;
+	background-repeat:no-repeat;
+}
+.corpolink{
+	margin-top:30px;
+	display:inline-block;
+	text-align:center;
+	width:72px;
+	height:72px;
+}
+#corpsteam {
+	background-image:url("../img/ixsteam.png");
+	background-color:transparent;
+
+}
+#corpps4 {
+	background-image:url("../img/ixps4.png");
+	background-color:transparent;
+}
+#corpwiiu {
+	background-image:url("../img/ixwiiu.png");
+	background-color:transparent;
+}
+#corpxbox {
+	background-image:url("../img/ixxbox.png");
+	background-color:transparent;
+}
+#corpbzk {
+	background-image:url("../img/ix_bzk_o.png");
+	background-color:transparent;
+}
+#corpfb {
+	background-image:url("../img/ix_fb_o.png");
+	background-color:transparent;
+}
+#corptw {
+	background-image:url("../img/ix_tw_o.png");
+	background-color:transparent;
+}
+#corpat {
+	background-image:url("../img/ix_at_o.png");
+	background-color:transparent;
+}
+#corpgl {
+	background-image:url("../img/ix_gl_o.png");
+	background-color:transparent;
+}
+#corptv {
+	background-image:url("../img/twitch_o.png");
+	background-color:transparent;
+}
+#corppk {
+	background-image:url("../img/ix_pk_o.png");
+	background-color:transparent;
+}
+#corpb{
+	background-image:url("../img/ix_forums_o.png");
+	background-color:transparent;
+}
+  /* misc
+  --------------------------------------------- */
+  .demo__info {
+    position: absolute;
+    z-index:100;
+    bottom: 1vh;
+    top: auto;
+    font-size:80%;
+    text-align:center;
+    width: 100%;
+  }
+body {
+	color:yellow;
+	
+}
+.desccontent {
+	display:inline-block;
+	width:80%;
+	
+	position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.consolecontent {
+	display:inline-block;
+	width:80%;
+	
+	position: absolute;
+    top: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.tvtitle {
+	text-align:center;
+	color:#ffc;
+	margin-bottom:40px;
+}
+.tvtitle img {
+	display:inline-block;
+	vertical-align:middle;
+}
+.on {
+	display:inline-block;
+	margin-left:30px;
+	margin-right:30px;
+	vertical-align:middle;
+}
+.tvtxt p {
+	margin-bottom:20px;
+}
+.sub {
+	text-align:center;
+	display:inline-block;
+	color:#ffc;
+	font-size:14pt;
+	width:90%;
+	vertical-align:top;
+	
+}
+.sub p {
+	line-height:30px;
+}
+.tvtxt {
+	text-align:center;
+	display:inline-block;
+	color:#ffc;
+	font-size:12pt;
+	width:90%;
+	vertical-align:top;
+}
+.txtgroup {
+	display:inline-block;
+	vertical-align:middle;
+	width:70%
+}
+.desctitle {
+	width:100%;
+	text-align:left;
+	font-family:"js";
+	color:#ffc;
+	text-shadow: 2px 2px 0px rgba(153, 0, 0, 1);
+}
+.desctxt p {
+	margin-bottom:10px;
+}
+.desctxt {
+	text-align:justify;
+	display:inline-block;
+	color:#ffc;
+	font-size:12pt;
+	width:90%;
+	vertical-align:top;
+}
+.descimg {
+	display:inline-block;
+	vertical-align:middle;
+	width:25%;
+}
+.bzktxt p {
+	margin-bottom:10px;
+}
+.bzktitle {
+	color:#101010;
+text-align:left;	
+}
+.bzktxt {
+	text-align:justify;
+	display:inline-block;
+	color:#101010;
+	font-size:12pt;
+	width:45%;
+	margin-left:5%;
+	vertical-align:middle;
+	padding-bottom:20px;
+}
+.bzkimg {
+		display:inline-block;
+	vertical-align:middle;
+	width:40%;
+}
+.bzkimg img {
+	max-width:100%;
+}
+.ixtwitch {
+	display:inline-block;
+	text-align:center;
+	background-image:url("../img/twitch_o.png");
+	width:72px;
+	height:72px;
+}
+.tvtxt a {
+	font-size:14pt;
+		color:#717171;
+	text-decoration:none;
+	
+}
+.tvtxt a:hover, #ixtwitch a:active {
+		color:#794bc6;
+}
+.item img, .item iframe {
+
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.tv {
+  border:5px #990000 solid;
+-webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,1);
+box-shadow: 10px 10px 10px 0px rgba(0,0,0,1);
+}
+
+#twitchrow, .rocks {
+	background-image:url("../img/ixrocksbg.png");
+	background-repeat-y:no-repeat;
+}
+.skulls {
+	display:inline-block;
+	height:66px;
+	width:159px;
+	margin-top:40px;
+		background-image:url("../img/ixbigskullssmall.png");
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+.descrow {
+	background-position:center center;
+	background-image:url("../img/wizardbg.png");
+	background-repeat:no-repeat;
+}
+.descrow .desctitle {
+	text-align:center;
+}
+.sorcererleft, .sorcererright {
+	display:inline-block;
+	background-repeat:no-repeat;
+	width: 205px;
+    height: 265px;
+	
+}
+.mediacontent {
+	width:620px;
+	display:inline-block;
+}
+.mediatitle {
+	text-align:center;
+}
+.sorcererleft {
+	display:none;
+	float:left;
+	width:50%;
+	background-position:right 60% top 50%;
+		background-image:url("../img/ixpxsorcerer.png");
+}
+.sorcererright {
+	display:none;
+	float:right;
+	width:50%;
+	background-position:left 60% top 50%;
+		background-image:url("../img/ixcpsorcerer.png");
+}
+.sorcerertitle {
+	width:100%;
+}
+.foreb {
+	pointer-events: none;
+}
+.absoimg {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+.carousel-indicators li {
+	border-radius:0px;
+	border:0px;
+	background-color:#fff;
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(153, 0, 0, 1);
+-moz-box-shadow: 2px 2px 0px 0px rgba(153, 0, 0, 1);
+box-shadow: 2px 2px 0px 0px rgba(153, 0, 0, 1);
+}
+.carousel-indicators .active {
+	background-color:#fbfe7b;
+}
+.absoimg img {
+	width:100%;
+}
+.cemetary {
+	background-image:url("../img/mediabgsmall.png");
+		background-position:center bottom;
+	background-repeat-y:no-repeat;
+		background-repeat-x:initial;
+}
+}
+body {
+	font-family: 'Raleway', sans-serif;
+		background-color:#101010;
+}
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+	    margin-top: 50%!important;
+	
+}
+.carousel-control {
+    height: 75%;
+}
